@@ -1,0 +1,506 @@
+*{box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none !important;
+   
+}
+
+/* start navbar */
+nav{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.navbar-nav .nav-link{
+position: relative;
+margin: 10px;
+}
+.navbar-nav .nav-link::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background: white;
+    left: 13px;
+    bottom: 4px;
+    transition: .5s all;
+    -webkit-transition: all 0.4s;
+}
+nav .nav-link:hover{
+    color: white;
+    
+}
+
+
+nav .container .nav-link.active::before{
+    width: 62%;
+    
+}
+
+/* end navbar
+start header */
+header{
+    background-image: url(../imgs/imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+header .layout{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+header .container .content h1{
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+header .container .content p{
+    font-size: 4rem;
+    
+    
+}
+header .container .content p::after{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite
+    }
+    @keyframes typing{
+        0%{content:"De |"}
+        2%{content:"Dev |"}
+        4%{content:"Deve|"}
+        6%{content:"Devel |"}
+        8%{content:"Develo|"}
+        10%{content:"Develop |"}
+        12%{content:"Develope |"}
+        14%{content:"Developer |"}
+        16%{content:"Develope |"}
+        18%{content:"Develop |"}
+        20%{content:"Develo |"}
+        22%{content:"Devel |"}
+        24%{content:"Devel |"}
+        26%{content:"Deve |"}
+        28%{content:"Dev |"}
+        30%{content:"De |"}
+        32%{content:"D |"}
+         34%{content:"De |"}
+        36%{content:"Des |"}
+        38%{content:"Desi |"}
+        40%{content:"Desig|"}
+        42%{content:"Design |"}
+        44%{content:"Designe |"} 
+        46%{content:"Designer |"} 
+        48%{content:"Designe |"} 
+        50%{content:"Design |"} 
+        52%{content:"Desig |"} 
+        54%{content:"Desi |"} 
+        56%{content:"Des |"} 
+        58%{content:"De |"} 
+        60%{content:"D |"} 
+        62%{content:"La |"} 
+        64%{content:"Lar |"} 
+        66%{content:"Larr |"} 
+        68%{content:"Larry |"} 
+        70%{content:"Larry D |"} 
+        72%{content:"Larry Da |"} 
+        74%{content:"Larry Dan |"} 
+        76%{content:"Larry Dani |"} 
+        78%{content:"Larry Danie |"} 
+        80%{content:"Larry Daniel |"} 
+        82%{content:"Larry Daniels |"} 
+        84%{content:"Larry Daniel |"} 
+        86%{content:"Larry Danie |"} 
+        88%{content:"Larry Dan |"} 
+        90%{content:"Larry Da |"} 
+        92%{content:"Larry D |"} 
+        94%{content:"Larry |"} 
+        96%{content:"Larr |"} 
+        98%{content:"Lar |"} 
+        99%{content:"La |"} 
+        100%{content:"L |"} 
+ }
+.social-icon span{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    padding: 8px; 
+    margin: 5px;
+    text-align: center;
+}    
+/* end header
+start about */
+#about .row .hero-img{
+    position: relative;
+    
+}
+#about .row .hero-img::before{
+   position: absolute;
+   content: "";
+   width: 80%;
+    height: 80%;
+    left: -24px;
+    bottom: -30px;
+    
+   background-image: url(../imgs/imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.skills {
+    margin-top: 30px;
+  }
+  
+.skills h6 {
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+.skills .skills-progress {
+    width: 100%;
+    padding: 1px 10px;
+    border-radius: 5px;
+    background: #f7f7f7;
+   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    position: relative;
+  }
+.skills .skills-progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+.skills .skills-progress span:after {
+    content: attr(data-value);
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 11px;
+    color: #fff;
+}
+.row .hero-cap .button .btn{
+    padding: 10px;
+    width: 150px;
+    height: 45px;
+    border: 1px solid #1c1c1c;
+   
+}
+.hero-cap .button .btn-left{
+    transition: all .5s;
+    color: white;
+    background-color: black;
+}
+.hero-cap .button .btn-left:hover{
+    background-color: white;
+    color: black;
+    
+}
+.hero-cap .button .btn-right{
+    transition: all .5s;
+    
+}
+.hero-cap .button .btn-right:hover{
+    background-color: black;
+    color: white;
+}
+/* <!-- end about
+start servises
+ --> */
+ #services{
+    background-color: #f7f7f7;
+ }
+#services .service-title h2{
+    position: relative;
+    
+ }
+#services .service-title h2::after{
+    content: "";
+    width: 18%;
+    height: 30px;
+    background-image: url(../imgs/imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -15px;
+    left: 461px;
+    z-index: 2;
+    text-align: center;
+}
+#services .container .icon{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+    margin: auto;
+    background-color: #f7f7f7;
+    transition: all .5s;
+} 
+#services .container .card{
+    background-color: white;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    
+}
+
+#services .container .card:hover .icon{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0 10px white;
+}
+/* /* end services
+start works */
+
+#works .portfolio-title h2{
+    position: relative;
+}
+#works .portfolio-title h2::after{
+    content: "";
+    background-image: url(../imgs/imgs/dots.png);
+    background-repeat: repeat;
+    width: 16%;
+    height: 30px;
+    bottom: -15px;
+    left: 469px;
+    position: absolute;
+}
+#works .nav-tabs .nav-link{
+    border: unset;
+    position: relative;
+    color: black;
+}
+#works .nav-tabs button::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background: #111;
+    left: 13px;
+    bottom: 4px;
+    transition: .5s all;
+    -webkit-transition: all 0.4s;
+}
+.nav-link:hover{
+    color: black;
+}
+#works .nav-link.active::before{
+    width: 62%;
+}
+#works figcaption h5{
+    font-size: 14px;
+    transition: all .5s;
+}
+#works figcaption{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    color: black;
+    padding: 113px;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    transform: translate(-100%);
+    
+    opacity: 0;
+    transition: all 0.5s;
+}
+#works figure{
+    position: relative;
+    overflow: hidden;
+}
+#works figcaption .icons i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+    transition: all .5s;
+    text-align: center;
+    font-size: 14px;
+}
+#works figure:hover figcaption{
+    transform: translate(0);
+    
+    opacity: 1;
+}
+
+#works figcaption .icons i:hover{
+    background: transparent;
+    color: #000 ! important;
+    
+}
+/* end works */
+/* start testimonials */ 
+#clints{
+    background-color: #f7f7f7;
+}
+#clints .testimonial-title h2{
+    position: relative;
+}
+#clints .testimonial-title h2::after{
+    content: "";
+    background-image: url(../imgs/imgs/dots.png);
+    background-repeat: repeat;
+    width: 20%;
+    height: 30px;
+    bottom: -15px;
+    left: 443px;
+    position: absolute;
+}
+#clints .item img{
+    width: 6rem;
+    height: 6rem;
+}
+#clients .item h6{
+    font-size: 20px;
+}
+#clints .item p{
+    font-size: 13px;
+    font-weight: bold;
+}
+.carousel-indicators [data-bs-target]{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #869791;
+}
+/* end testimonial
+start team */
+#team{
+    background-color: #f7f7f7;
+}
+#team .team-title h2{
+    position: relative;
+}
+#team .team-title h2::after{
+    content: "";
+    background-image: url(../imgs/imgs/dots.png);
+    background-repeat: repeat;
+    width: 20%;
+    height: 30px;
+    bottom: -15px;
+    left: 443px;
+    position: absolute;
+}
+#team .card-group .card{
+    background-color: rgba(52, 52, 52,.8);
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 0%;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.2);
+    
+}
+#team .card-group .card .card-body{
+    color: white;
+    text-align: center;
+}
+#team .card .team{
+    overflow: hidden;
+    position: relative;
+}
+#team .card img{
+    transition: all 1s;
+    
+}
+#team .card:hover img{
+    transform: scale(1.3);
+}
+#team .card .overlay{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    color: black;
+    padding: 113px;
+    position: absolute;
+    top: 5px;
+    bottom: 115px;
+    right: 5px;
+    left: 5px;
+    transition: 0.5s all;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    opacity: 0;
+}
+#team .card .overlay .social-media ul{
+    position: relative;
+}
+#team .card .overlay .social-media ul li i{
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #000;
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    left: -93px;
+    bottom: -40px;
+    position: relative;
+}
+#team .card-group .card:hover .overlay{
+    transform: rotateY(0deg) scale(1, 1);
+   opacity: 1;
+}
+#team .card .overlay .social-media ul li i:hover{
+background-color: white;
+color: black! important;
+}
+/* <!-- end Team
+start contact --> */
+#contact .contact-title h2{
+    position: relative;
+}
+#contact .contact-title h2::after{
+    content: "";
+    background-image: url(../imgs/imgs/dots.png);
+    background-repeat: repeat;
+    width: 20%;
+    height: 30px;
+    bottom: -15px;
+    left: 443px;
+    position: absolute;
+}
+#contact .row .contact-icon i{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 20px;
+    transition: .5s all;
+}
+#contact .row .parent:hover i{
+    color: white;
+    background-color: black;
+}
+#contact .btn{
+    padding: 10px;
+    width: 150px;
+    height: 45px;
+    border: 1px solid #1c1c1c;
+    background-color: black;
+}
+#contact .btn:hover{
+    background-color: white;
+    color: black;
+}
+/* end contact
+start footer */
+footer{
+    background: #1c1c1c;
+    padding: 30px;
+}
+footer p{
+    color: #748182
+}
+
+
